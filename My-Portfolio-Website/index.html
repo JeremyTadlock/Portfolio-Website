@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class= "container">
+        <div class="navigation-wrapper">
+            <div class="left-side">
+                <div class="navigation-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="navigation-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="my-information">
+                    <div>Jeremy Tadlock</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+
+                    <div class="portfolio-image-background" style = "background-image:url(Images/GitHubBackground.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/Logos/GitHubLogo.png">   
+                        </div>
+
+                        <div class="subtitle">
+                            Redirects you to my GitHub account where you can find my projects.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style = "background-image:url(Images/LinkedInBackground.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/Logos/LinkedInLogo.png">   
+                        </div>
+
+                        <div class="subtitle">
+                            Redirects you to my LinkedIn profile.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style = "background-image:url(Images/LinkedInBackground.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/Logos/LinkedInLogo.png">   
+                        </div>
+
+                        <div class="subtitle">
+                            Redirects you to my LinkedIn profile.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style = "background-image:url(Images/LinkedInBackground.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/Logos/LinkedInLogo.png">   
+                        </div>
+
+                        <div class="subtitle">
+                            Redirects you to my LinkedIn profile.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style = "background-image:url(Images/LinkedInBackground.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/Logos/LinkedInLogo.png">   
+                        </div>
+
+                        <div class="subtitle">
+                            Redirects you to my LinkedIn profile.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style = "background-image:url(Images/LinkedInBackground.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/Logos/LinkedInLogo.png">   
+                        </div>
+
+                        <div class="subtitle">
+                            Redirects you to my LinkedIn profile.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style = "background-image:url(Images/LinkedInBackground.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/Logos/LinkedInLogo.png">   
+                        </div>
+
+                        <div class="subtitle">
+                            Redirects you to my LinkedIn profile.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style = "background-image:url(Images/LinkedInBackground.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/Logos/LinkedInLogo.png">   
+                        </div>
+
+                        <div class="subtitle">
+                            Redirects you to my LinkedIn profile.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style = "background-image:url(Images/LinkedInBackground.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Images/Logos/LinkedInLogo.png">   
+                        </div>
+
+                        <div class="subtitle">
+                            Redirects you to my LinkedIn profile.
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+                
+            <div class="footer-information">
+                <div class="footer-information-text">
+                    <div class="footer-information-text-header">
+                        <h1> Jeremy William Tadlock, 2021</h1>
+                        <h2> Version 1.0 </h2>
+                    </div>
+                    
+                    <div class="footer-information-text-credits">
+                        <p> Images found at <a href="https://www.unsplash.com/">Unsplash</a> with freely-usable images <a href="https://unsplash.com/license">license </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem =>
+    {
+        portfolioItem.addEventListener('mouseover', () => 
+        {
+            portfolioItem.childNodes[3].classList.add('image-brighten');
+            portfolioItem.childNodes[1].classList.add('image-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => 
+        {
+            portfolioItem.childNodes[3].classList.remove('image-brighten');
+            portfolioItem.childNodes[1].classList.remove('image-darken');
+        })
+    })
+</script>
+</html>
